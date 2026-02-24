@@ -1,5 +1,7 @@
 # Target (IP address on Terminal - copy/pasteable address)
 
+* Update: Conservar VPN IP address (step 5)
+
 ## 1. ~/.config/target/target.sh
 
 ```sh
@@ -147,3 +149,9 @@ Por GUI (recomendado)
 - Command: `/bin/bash -lc "$HOME/.config/target/audit-panel.sh"`
 - Interval: 1 (o 2 si quieres menos refrescos)
 - Marca “Label” vacío (o desactívalo si aparece)
+
+
+## 5. VPN IP address
+
+1. Incluir un segundo Gemmon
+2. Command: `/bin/bash -lc "ip -o -4 addr show tun0 2>/dev/null | awk '{print \$4}' | cut -d/ -f1"`
