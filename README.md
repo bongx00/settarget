@@ -1,6 +1,7 @@
 # Target (IP address on Terminal - copy/pasteable address)
 
 * Update: Conservar VPN IP address (step 5)
+  * Quitar las f*king "XXX" placeholder: restarurar en el segundo Gemmon el `command` al script default `/usr/share/kali-themes/xfce4-panel-genmon-vpnip.sh`
 
 ## 1. ~/.config/target/target.sh
 
